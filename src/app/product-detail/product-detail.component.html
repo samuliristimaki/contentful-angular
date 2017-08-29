@@ -1,0 +1,37 @@
+ <p *ngIf="product">
+  <md-card class="product-card">
+    <md-card-header>
+      <md-card-title>{{ product.fields.productName }}</md-card-title>
+      <md-card-subtitle>{{ product.fields.sizetypecolor }} | <strong>Price: {{ product.fields.price }} $</strong></md-card-subtitle>
+    </md-card-header>
+    <md-card-content>
+      <md-tab-group>
+        <md-tab *ngIf="product.fields.image" label="Image">
+          <div class="tab-container">
+            <img class="u-marginAutoHorizontal" src="{{ product.fields.image[0].fields.file.url }}">
+            <p>{{ product.fields.image[0].fields.description }}</p>
+          </div>
+        </md-tab>
+        <md-tab label="Description">
+          <div class="tab-container">
+            <p>{{ product.fields.productDescription }}</p>
+            <p>SKU: {{ product.fields.sku || 'SKU not available' }}</p>
+          </div>
+        </md-tab>
+        <md-tab *ngIf="product.fields.brand" label="Brand">
+          <div class="tab-container">
+            <div class="brand-panel">
+              <div class="brand-panel-img">
+                <img src="{{ product.fields.brand.fields.logo.fields.file.url }}">
+              </div>
+              <div>
+                <h3>{{ product.fields.brand.fields.companyName }}</h3>
+                <p>{{ product.fields.brand.fields.companyDescription }}</p>
+              </div>
+            </div>
+          </div>
+        </md-tab>
+      </md-tab-group>
+    </md-card-content>
+  </md-card>
+</p>

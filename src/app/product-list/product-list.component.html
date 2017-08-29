@@ -1,0 +1,14 @@
+<ul class="u-listReset product-grid">
+  <li class="u-marginBottom" *ngFor="let product of products">
+    <md-card class="product-card">
+      <md-card-header>
+        <md-card-title>{{ product.fields.productName }}</md-card-title>
+        <md-card-subtitle><strong>Price: {{ product.fields.price }} $</strong></md-card-subtitle>
+      </md-card-header>
+      <img md-card-image src="{{ product.fields.image[0].fields.file.url }}">
+      <md-card-actions class="u-marginTopAuto">
+        <a md-button [routerLink]="['/products', product.fields.slug]">View details</a>
+      </md-card-actions>
+    </md-card>
+  </li>
+</ul>
