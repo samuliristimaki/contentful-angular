@@ -17,3 +17,7 @@ Run `npm install` && `npm start` for a dev server. Navigate to `http://localhost
 ## Links
 
 [Using contentful in an Angular project](https://www.contentful.com/developers/docs/javascript/tutorials/using-contentful-in-an-angular-project/)
+
+## Contributors
+
+Samuli Ristimäki
