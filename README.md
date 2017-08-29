@@ -1,4 +1,4 @@
-# ContentfulAngular
+# Contentful - Angular
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
 
@@ -6,9 +6,9 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 
 Run `npm install` && `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## GitHub Page
+## Live demo
 
-[Demo app](https://samuliristimaki.github.io/contentful-angular/)
+[Frantic demo app](https://samuliristimaki.github.io/contentful-angular/)
 
 ## Contentful
 
@@ -17,5 +17,3 @@ Run `npm install` && `npm start` for a dev server. Navigate to `http://localhost
 ## Links
 
 [Using contentful in an Angular project](https://www.contentful.com/developers/docs/javascript/tutorials/using-contentful-in-an-angular-project/)
-
-[Product catalogue web application](https://github.com/contentful-labs/product-catalogue-web.ts)
